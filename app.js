@@ -8,7 +8,7 @@ let lowScore = localStorage.getItem("low-score");
 
 //Load front image:
 for (let i = 0; i < totalCards; i++) {
-    let pathFront = "gifs/9.gif";
+    let pathFront = "gifs/9.GIF";
     cardsArray[i].children[0].children[0].src = pathFront;
 }
 //Load back images:
