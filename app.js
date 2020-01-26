@@ -8,7 +8,7 @@ let lowScore = localStorage.getItem("low-score");
 
 //Load front image:
 for (let i = 0; i < totalCards; i++) {
-    let pathFront = "gifs/9.gif";
+    let pathFront = "gifs/10.gif";
     cardsArray[i].children[0].children[0].src = pathFront;
 }
 //Load back images:
@@ -25,10 +25,6 @@ startBtn.addEventListener("click", startGame);
 function startGame() {
     setScore(0);
     location.reload(); // reseet once start button is pressed
-    // var cardsFlippedArray = document.querySelectorAll(".is-flipped");
-    // for (let i = 0; i < cardsFlippedArray.length; i++) {
-    //     cardsFlippedArray[i].classList.remove("is-flipped");
-    // }
 }
 
 function cardClick(e) {
