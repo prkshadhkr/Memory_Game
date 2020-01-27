@@ -98,9 +98,9 @@ if (lowScore) {
 function endGame() {
     let lowScore = +localStorage.getItem("low-score") || Infinity;
     if (currentScore < lowScore) {
-        alert(`Congratulations! New best score: ${currentScore}`);
+        alert(`CONGRATULATIONS! YOU HOLD THE NEW RECORD: ${currentScore}`);
         localStorage.setItem("low-score", currentScore);
     } else {
-        alert(`Your score is: ${currentScore}`);
+        alert(`YOUR MOVES : ${currentScore}`);
     }
 }
