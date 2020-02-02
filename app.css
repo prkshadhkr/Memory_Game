@@ -77,9 +77,15 @@ img {
 }
 
 #start-button {
-    width: 10%;
-    height: 30px;
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 5px 30px;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    /* margin: 4px 2px; */
     margin: auto;
-    justify-content: center;
-    display: flex;
+    border-radius: 5px;
+    cursor: pointer;
 }

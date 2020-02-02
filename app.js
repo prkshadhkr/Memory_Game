@@ -51,10 +51,14 @@ function cardClick(e) {
             cardB = null;
         } else {
             setTimeout(function() {
-                cardA.classList.remove("is-flipped");
-                cardB.classList.remove("is-flipped");
-                cardA = null;
-                cardB = null;
+                if (cardA !== null) {
+                    cardA.classList.remove("is-flipped");
+                    cardA = null;
+                }
+                if (cardB !== null) {
+                    cardB.classList.remove("is-flipped");
+                    cardB = null;
+                }
             }, 1000);
         }
     }
